@@ -48,6 +48,21 @@ with open("sensor_data.csv", "w", newline="") as file:
         sensor = generate_sensor_data(container_id)
         writer.writerow(sensor)
 print("2000 sensor records generated successfully!")
+# Data validation checks
+import os
+
+if os.path.exists("sensor_data.csv"):
+    print("Sensor data CSV created successfully!")
+
+with open("sensor_data.csv", "r") as file:
+    total_records = sum(1 for line in file) - 1  # excluding header
+
+print("Total records generated:", total_records)
+
+if total_records == 2000:
+    print("Data validation passed: 2000 records available")
+else:
+    print("Data validation failed")
 
 print("------ ATMOSYNC SENSOR DATA ------")
 
