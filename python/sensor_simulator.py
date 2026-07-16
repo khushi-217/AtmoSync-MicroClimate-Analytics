@@ -64,6 +64,11 @@ print("Timestamp :", timestamp)
 print("Vibration :", vibration)
 
 print("Battery :", battery, "%")
+if temperature > 6:
+    print("⚠ ALERT: High Temperature Detected!")
+
+if battery < 85:
+    print("⚠ ALERT: Low Battery Level!")
 
 print("\nReading Avocado Dataset...\n")
 
