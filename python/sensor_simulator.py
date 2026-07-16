@@ -64,7 +64,16 @@ if total_records == 2000:
 else:
     print("Data validation failed")
 
-print("------ ATMOSYNC SENSOR DATA ------")
+print("=" * 40)
+print("        ATMOSYNC SENSOR REPORT")
+print("=" * 40)
+
+print("Simulation Completed Successfully")
+print("Generated Records : 2000")
+print("Dataset Loaded Successfully")
+
+print()
+print("------ SAMPLE SENSOR DATA ------")
 
 print("Container ID :", container_id)
 
