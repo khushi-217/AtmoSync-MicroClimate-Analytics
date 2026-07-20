@@ -13,6 +13,8 @@ with open("sensor_data.csv", "r") as file:
 
     for row in reader:
 
+
+        print("\nReceiving data from Producer...")
         print(f"\nReceived Record {count}")
         print("-" * 30)
 
@@ -35,4 +37,6 @@ with open("sensor_data.csv", "r") as file:
 
         time.sleep(0.2)
 
-print("\nConsumer finished receiving all records.")
+print("\n========================================")
+print("Consumer successfully processed all sensor records.")
+print("========================================")
