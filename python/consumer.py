@@ -35,7 +35,7 @@ with open("sensor_data.csv", "r") as file:
 
         count += 1
 
-        time.sleep(0.2)
+        time.sleep(1)
 
 print("\n========================================")
 print("Consumer successfully processed all sensor records.")
